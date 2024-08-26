@@ -1,4 +1,4 @@
-**PROGRAM NO 1**
+**PROGRAM NO 9.1**
 
 #include<iostream>
 using namespace std;
@@ -13,7 +13,7 @@ void show()
 	cout<<"Programming makes life interesting";
 }
 
-**PROGRAM N0 2**
+**PROGRAM N0 9.2**
 
 #include<iostream>
 using namespace std;
@@ -34,7 +34,7 @@ void max(int a, int b)
 	cout<<"maximun number is "<<b;
 }
 
-**PROGRAM N0 3**
+**PROGRAM N0 9.3**
 
 #include<iostream>
 using namespace std;
@@ -56,7 +56,7 @@ void table(int num)
 	}
 }
 
-**PROGRAM N0 4**
+**PROGRAM N0 9.4**
 
 #include<iostream>
 using namespace std;
@@ -78,7 +78,7 @@ void value(int n)
 	cout<<"The number after "<<n<<" is "<<s;
 }
 
-**PROGRAM N0 5**
+**PROGRAM N0 9.5**
 
 #include<iostream>
 using namespace std;
@@ -102,7 +102,7 @@ void factorial(int n)
 	cout<<"The factorial of "<<n<<" is "<<f;
 }
 
-**PROGRAM N0 6**
+**PROGRAM N0 9.6**
 
 #include<iostream>
 using namespace std;
@@ -138,7 +138,7 @@ int main()
 	return 0;
 }
 
-**PROGRAM N0 7**
+**PROGRAM N0 9.7**
 
 #include<iostream>
 using namespace std;
@@ -179,5 +179,134 @@ void cal(int a,int b, char c)
 	}
 }
 
-**PROGRAM N0 8**
+**PROGRAM N0 9.8**
+
+#include<iostream>
+using namespace std;
+void shape(int, char);
+int main()
+{
+	int num;
+	char ch;
+	cout<<"enter a number : ";
+	cin>>num;
+	cout<<"enter a character : ";
+	cin>>ch;
+	shape(num,ch);
+	return 0;
+}
+void shape(int n, char c)
+{
+	int i,j;
+	for(i=1;i<=n;i++)
+	{
+	    cout<<endl;
+		for(j=1;j<=n;j++)
+		cout<<c;
+	}
+}
+
+**PROGRAM N0 9.9**
+
+#include<iostream>
+using namespace std;
+void swap(int &x, char &y);
+int main()
+{
+	int a,b;
+	cout<<"enter two integers :";
+	cin>>a>>b;
+	cout<<"Values before swapping are:\n";
+	cout<<"a= "<<a<<"\nb= "<<b<<endl;
+	swap(a,b);
+	cout<<"Values after swapping are:\n"; 
+	cout<<"a= "<<a<<"\nb= "<<b<<endl;
+	return 0;
+}
+void swap(int &x, char &y)
+{
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+}
+
+**PROGRAM N0 9.10**
+
+#include<iostream>
+using namespace std;
+char grade(int x);
+int main()
+{
+	int marks;
+	char g;
+	cout<<"Enter marks :";
+	cin>>marks;
+	g=grade(marks);
+	cout<<"Your grade is "<<g;
+	return 0;
+}
+char grade(int x)
+{
+	if(x>80)
+	return 'A';
+	else if(x>60)
+	return 'B';
+	else if(x>40)
+	return 'C';
+	else
+	return 'F';
+}
+
+**PROGRAM N0 9.11**
+
+#include<iostream>
+using namespace std;
+int mul(int,int);
+int main()
+{
+	int i,r,x,y;
+	for(i=1;i<=5;i++)
+	{
+		cout<<"Enter pair of integers: ";
+		cin>>x>>y;
+		r=mul(x,y);
+		if(r==1)
+		cout<<y<<" is multiple of "<<x<<endl;
+		else
+		cout<<y<<" is not multiple of "<<x<<endl;
+	}	
+	return 0;
+}
+int mul(int a,int b)
+{
+	if(b%a==0)
+	return 1;
+	else
+	return 0;
+}
+
+**PROGRAM N0 9.12**
+
+#include<iostream>
+using namespace std;
+float area(int b,int h);
+int main()
+{
+	int base,height;
+	float a;
+	cout<<"Enter base & height: ";
+	cin>>base>>height;
+	a=area(base,height);
+	cout<<"Area of Triangle = "<<a;
+	return 0;
+}
+float area(int b,int h)
+{
+	float ar;
+	ar=0.5*b*h;
+	return ar;
+}
+
+**PROGRAM N0 9.13**
 
