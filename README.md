@@ -12,6 +12,8 @@ void show()
 {
 	cout<<"Programming makes life interesting";
 }
+**OYTPUT**
+![Capture](https://github.com/user-attachments/assets/81acfb96-8b87-4c43-85e9-6d1adf863fc8)
 
 **PROGRAM N0 9.2**
 
